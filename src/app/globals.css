@@ -1,42 +1,73 @@
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap');
+
+
+:root{
+    --headingFontFamily:"Josefin Sans", serif;
+    --descFontFamily: "Roboto Mono", monospace;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-html,
-body {
-  max-width: 100vw;
-  overflow-x: hidden;
-}
-
-body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-* {
+*{
+  margin: 0 ;
+  padding: 0 ;
   box-sizing: border-box;
-  padding: 0;
-  margin: 0;
+  outline: none;
+}
+body{
+  scroll-behavior: smooth;
+  background-color: #000704ec;
+  color: rgba(238, 255, 238, 0.973);
+  /* padding: 0 1%; */
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+@media (min-width:1900px) {
+  body{
+    padding: 1% 15%;
   }
 }
+
+
+nav{
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100000;
+  background-color: #000704b2;
+}
+
+/* main{
+  position: relative;
+  top: -7rem;
+} */
+
+
+h1 ,h2 ,h3 ,h4 ,h5 ,h6 {
+  font-family: var(--headingFontFamily);
+  padding: .4rem .6rem;
+  font-optical-sizing: auto;
+}
+
+p ,li ,a ,td ,strong ,button, b, i, input{
+  font-family: var(--descFontFamily);
+  font-optical-sizing: auto;
+  padding: .4rem .6rem;
+  font-weight: 500;
+  font-size: .8rem;
+}
+
+/* button{
+  background-color: #03c23dec;
+  cursor: pointer;
+  border-radius: .5rem;
+  border: none;
+  margin: 1px 2px;
+  transition: all .3s ease-in-out;
+}button:hover{
+  background-color: #000704ad;
+  border: 1px solid aqua;
+  color: #03c23dec;
+  cursor: pointer;
+  border-radius: 0rem;
+} */
+
+

@@ -1,0 +1,144 @@
+.nav{
+ padding: .5rem ;  
+ display: flex;
+ flex-direction: column;
+}
+
+.nav1, .nav2{
+ margin: .5rem 0;
+}
+
+.nav hr{
+    border: 1px solid rgba(255, 255, 255, 0.76);
+}
+
+
+.nav .nav1{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+} .nav1>.navC{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* .navBook button{
+    width: 8rem;
+    height: 2rem;
+} */
+
+.nav .nav2 {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* background-color: aliceblue; */
+}
+
+ .navlogo{
+    flex: 1;
+}
+
+ .navItem{
+    flex: 4;
+    display: block;
+}
+
+.navlogo h3{
+    font-size: 1.5rem;
+    color: aqua;
+    width: 4rem;
+    border: 1px solid white;
+    padding: 0;
+}.navlogo h3 span{
+    color: rgb(4, 255, 4);
+}
+
+
+
+.nav2 .navItem ul{
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   justify-content: flex-end;
+   list-style-type: none;
+}.navItem ul li{
+    margin: 0;
+    /* background-color: aliceblue; */
+}
+
+.navItem ul li .navLink{
+    color: aliceblue;
+    text-decoration: none;
+    transition: all .3s ease-in-out;
+    text-transform: capitalize;
+}
+
+.navLink:hover{
+    background-color: #09A709DF;
+}
+
+.navLink.navActive{
+    background-color: #09c909df;
+}
+
+.nav2 .navControl{
+    display: none;
+}
+
+
+@media (max-width:800px) {
+
+    .nav2 .navControl{
+        display: block;
+        text-align: center;
+    }    
+
+    .nav .nav2 {
+        align-items: flex-start;
+    }
+
+    .navlogo{
+        flex: 2;
+    }
+    
+     .navItem{
+        flex: 3;
+        display: none;
+    }
+    /* .navControl{
+        flex: .5;
+    } */
+    .nav2 .navItem ul{
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    padding: 1rem ;
+    gap: .1rem;
+    background-color: rgba(240, 248, 255, 0.089);
+    }
+}
+
+
+@media (max-width:600px) {
+    .nav .nav1{
+        align-items: center;
+        justify-content: flex-end;
+    }.nav1>.navC{
+        display: none;
+    }
+    
+}
+
+
+
+
+
+
+
+
+
