@@ -1,0 +1,116 @@
+.footer {
+    position: relative;
+    background: url('https://i.ibb.co.com/YDYF31y/heroImg3.jpg') no-repeat center center/cover;
+    color: #fff;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+  }
+  
+  .container {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    z-index: 2;
+    margin: 0 auto;
+    padding: 2rem;
+  }
+
+ .cont1, .cont2{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .column{
+    width: 50%;
+  }
+  .column h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+  
+  .column p,
+  .column ul {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin-bottom: 10px;
+  }
+  
+  .column ul li {
+    margin-bottom: 5px;
+  }
+  
+  .logo {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+  }.logo span{
+    color: gold;
+  }
+  
+  .socials i {
+    font-size: 1.2rem;
+    margin-right: 10px;
+    cursor: pointer;
+  }
+  
+  .newsletter {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .newsletter input {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .newsletter button {
+    padding: 10px;
+    background: #ffc107;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #000;
+    font-weight: bold;
+  }
+
+  @media (max-width: 1108px) {
+    .container {
+       flex-direction: column;
+      }
+    
+    .socials {
+      justify-content: center;
+    }
+  }
+    
+  @media (max-width: 768px) {
+
+     .cont1, .cont2{
+        flex-direction: column;
+      }
+    
+      .column{
+        width: 100%;
+      }
+      .column{
+        width: 100%;
+      }
+  }

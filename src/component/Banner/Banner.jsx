@@ -4,6 +4,7 @@ import styles from './banner.module.css';
 import Link from 'next/link';
 import ButtonC from '../ButtonTemp/Button';
 
+
 const Banner = () => {
     
     const slides= [
@@ -32,7 +33,7 @@ const Banner = () => {
     const slideStyle ={
         width:'100%',
         height:'95vh',
-        borderRadius:'1rem',
+        // borderRadius:'1rem',
         backgroundPosition:'center',
         backgroundSize:'cover',
         backgroundImage:`url(${slides[currIndes].img})`,

@@ -1,5 +1,6 @@
 import Navber from "@/component/nav/Nav";
 import "./globals.css";
+import Footer from "@/component/footer/Footer";
 
 export const metadata = {
   title: "HotleX",
@@ -19,7 +20,7 @@ export default function RootLayout({ children }) {
         </main>
 
         <footer>
-          <h1>Foooo</h1>
+          <Footer/>
         </footer>
 
 
