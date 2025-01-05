@@ -1,6 +1,8 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './banner.module.css';
+import Link from 'next/link';
+import ButtonC from '../ButtonTemp/Button';
 
 const Banner = () => {
     
@@ -25,9 +27,73 @@ const Banner = () => {
 
     const [currIndes, setCurrIndex] =useState(0);
 
+
+
+    const slideStyle ={
+        width:'100%',
+        height:'95vh',
+        borderRadius:'1rem',
+        backgroundPosition:'center',
+        backgroundSize:'cover',
+        backgroundImage:`url(${slides[currIndes].img})`,
+        // backgroundAttachment: 'fixed',
+        backgroundRepeat: 'no-repeat',
+        transition: 'all 1s ease-in-out',
+    };
+
+    const handlePrev =()=>{
+        const isFirstSl = currIndes ===0;
+        const newImageIndex = isFirstSl ? slides.length -1 : currIndes -1
+        setCurrIndex(newImageIndex);
+    };
+    const handleNext =()=>{
+        const isLastSl = currIndes ===slides.length -1;
+        const newImageIndex = isLastSl ? 0 : currIndes +1
+        setCurrIndex(newImageIndex);
+    };
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+          setCurrIndex((prevIndex) => {
+            if (prevIndex >= slides.length - 1) {
+              return 0; // Loop back to the first slide
+            }
+            return prevIndex + 1; // Go to the next slide
+          });
+        }, 3000); // Change slide every second
+      
+        return () => clearInterval(interval); // Cleanup the interval on unmount or dependency change
+      }, [slides.length]);
+
+
     return (
         <section className={styles.banner}>
-            <h1>Banner</h1>
+            {/* <h1>Banner</h1> */}
+
+            <div className={styles.slideCont}>
+               <div className={styles.slider}>
+                {/* SLider contorller ---> */}
+                    <div className={styles.prevBtn}><button onClick={handlePrev} style={{cursor:'pointer',fontSize:'1.2rem'}}>&#10094;</button></div>
+                    <div className={styles.nextBtn}><button onClick={handleNext} style={{cursor:'pointer',fontSize:'1.2rem'}}>&#10095;</button></div>
+
+                {/* Slider ---->*/}
+                    <div style={slideStyle} className={styles.slide}>
+                        <h3>{slides[currIndes].title}</h3>
+                        <p>{slides[currIndes].desc}</p>
+                        <div className={styles.slideBtn}>
+                            <Link href={'/#'}><ButtonC content={'Book a Table'}/> </Link>
+                            <Link href={'/#'}><ButtonC content={'Our Menus'}/> </Link>
+                        </div>
+                     </div>
+
+                {/* slider controller dots ----> */}
+                    <div className={styles.dots}>
+                        {
+                            slides.map((s,sidnex)=><span style={{color:'blue',cursor:'pointer'}} onClick={()=>setCurrIndex(sidnex)} key={sidnex}>{currIndes===sidnex ? '🟢' :'⚪️'}</span>)
+                        }
+                    </div>
+               </div>
+            </div>
         </section>
     );
 };

@@ -1,4 +1,93 @@
 .banner{
-    max-width: 800px;
-    max-height: 500px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   margin-top: -5.5rem;
+   padding: 1rem 0;
+   width: 100%;
 }
+
+.banner .slideCont{
+    min-width: 95%;
+    min-height: 500px;
+    
+}
+
+.slideCont .slider{
+    position: relative;
+    width: 100%;
+}
+
+.slider .nextBtn{
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    right:20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 1111;
+}
+
+.slider .prevBtn{
+    position: absolute;
+    top:50%;
+    transform: translate(0,-50%);
+    left:20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 1111;
+}
+
+.slider .dots{
+    position: absolute;
+    bottom:10%;
+    transform: translate(50%,50%);
+    bottom:20px;
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    z-index: 1111;
+}
+
+
+.slider .slide{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0 5rem ;
+    gap: 1rem;
+}
+
+.slide p{
+    width: 70%;
+}
+
+.slide h3{
+    font-size: 300%;
+    color: azure;
+}
+
+@media (max-width:700px) {
+    .slider .slide{
+        padding: 0 3rem ;
+    }
+    .slide p{
+        width: 90%;
+    }
+    
+    .slide h3{
+        font-size: 200%;
+        color: azure;
+    }
+}
+@media (max-width:500px) {
+    .slide p{
+        width: 100%;
+    }
+    .slide h3{
+        font-size: 100%;
+    }
+}
+
+
