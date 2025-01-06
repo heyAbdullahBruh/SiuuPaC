@@ -1,0 +1,125 @@
+.events{
+    width: 100%;
+    /* height: 100vh; */
+    background-position:center ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url('https://i.ibb.co.com/wN4SncP/events-bg.jpg');
+}
+
+.eventCont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    align-items: center;
+    background-color: #032c20b7;
+    padding: 1rem 2%;
+}
+.eventHead{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+.eventHead h2{
+    font-size: 2rem;
+    background-color: rgba(255, 217, 0, 0.671);
+    text-align: center;
+    color: #09ffb5;
+    width: 8rem;
+    border-radius: 2rem;
+}
+.eventHead p{
+   font-size: 1.5rem;
+   color: #05dd3b;
+   background-color: #032c208c;
+   border-radius: 3rem;
+}.eventHead p span{
+    color: gold;
+    font-style: italic;
+    border-bottom: 1px solid #63e8ff;
+}
+
+.eventSec{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 6s ease-in-out;
+}
+
+.eventUp{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 6s ease-in-out;
+}
+
+.eventInfo{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.eventImg{
+    width: 55%;
+    text-align: center;
+    transition: all 6s ease-in-out;
+}
+
+.eventImg img{
+    width: 80%;
+}
+
+.eventInfo h4{
+    color: gold;
+    border-bottom: 1px solid #eee;
+    width: 3rem;
+    text-align: center;
+}
+
+.eventInfo h3{
+    font-size: 1.5rem;
+    color: #63e8ff;
+}
+
+.eventItem h5{
+    font-size: 1.2rem;
+    color: violet;
+}
+
+.eventItem ul{
+    padding: .1rem 3rem;
+    margin: 0;
+    list-style-type: armenian;
+}.eventItem ul li{
+    padding: .2rem;
+    margin: 0;
+    color: cornsilk;
+}
+
+.eventInfo p{
+    color: #b4c2be;
+    font-size: 1rem;
+}
+
+
+@media (max-width:900px) {
+    .eventUp{
+        flex-direction: column;
+
+    }
+    .eventInfo{
+        width: 90%;
+    }
+    .eventImg{
+        width: 90%;
+    }
+
+}
+

@@ -257,15 +257,41 @@ export default menuItems;
 
 export const specialItem =[
   {
-    id:uuidv4(),
+    id:'spi1',
+    itemname:'Modi sit est',
     title :'Architecto ut aperiam autem id',
-    desc1 :'Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka',
-    desc2:'Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero.'
-  }
+    img:'https://i.ibb.co.com/8jpWRMy/specials-1.jpg',
+    desc :'Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka.\n Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero.',
+  },
+  {
+    id:'spi2',
+    itemname:'Unde praesentium sed',
+    title :'Et blanditiis nemo veritatis excepturi',
+    img:'https://i.ibb.co.com/WzzJHS9/specials-2.jpg',
+    desc :'Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka.\n Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal.',
+  },
+  {
+    id:'spi3',
+    itemname:'Pariatur explicabo vel',
+    title :'Impedit facilis occaecati odio neque aperiam sit',
+    img:'https://i.ibb.co.com/GppxyNH/specials-3.jpg',
+    desc :'Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut.\n Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae.',
+  },
+  {
+    id:'spi4',
+    itemname:'Nostrum qui quasi',
+    title :'Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore',
+    img:'https://i.ibb.co.com/37F14Wx/specials-4.jpg',
+    desc :'Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus.\n Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore.',
+  },
+  {
+    id:'spi5',
+    itemname:'Iusto ut expedita aut',
+    title :'Est eveniet ipsam sindera pad rone matrelat sando reda',
+    img:'https://i.ibb.co.com/CbhR1FD/specials-5.jpg',
+    desc :'Omnis blanditiis saepe eos autem qui sunt debitis porro quia.\n Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel.',
+  },
+
 ];
-
-
-
-
 
 
