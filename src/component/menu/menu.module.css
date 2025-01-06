@@ -1,0 +1,143 @@
+.Menu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 2%;
+    background: transparent;
+    gap: 2rem;
+    position: relative;
+}
+
+.menuHead{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.menuHead h3{
+    background-color: #ffd9003a;
+    color: #ffd700;
+    border-radius: 1rem;
+    padding: .5rem 1rem;
+    font-family: "Roboto Mono", monospace;
+    font-style: italic;
+}.menuHead h2{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-style: italic;
+}.menuHead h2 span{
+    color: #ffd700;
+    border: 1px solid #00ff40;
+    border-radius: 50%;
+}
+
+.menuHead .menuAct button{
+    margin: .1rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: .9rem;
+    cursor: pointer;
+    border: 3px solid #03aa2d5d;
+}
+
+.menuAct .btnActive{
+    background-color: #03aa2d5d;
+    color: gold;
+    border: white;
+}
+
+.menuAct h4{
+    margin: 1rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: "Roboto Mono", monospace;
+}.menuAct h4 span{
+    color: gold;
+    border-bottom: 1px solid #ff0055;
+}
+
+
+
+.menuCont{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 1rem;
+}
+
+.menuItem {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    border-bottom: 1px dashed #ddd;
+    background-color: #ffffff0c;
+    border-radius: 5px;
+    transition: box-shadow 0.3s ease;
+    cursor: pointer;
+    transition: all .3s ease-in-out;
+  }.menuItem:hover{
+    transform: scale(.9);
+  }
+  
+  .menuItem:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .imageWrapper {
+    flex-shrink: 0;
+    border-radius: 50%;
+    overflow: hidden;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #ddd;
+  }
+  
+  .image {
+    object-fit: cover;
+  }
+  
+  .details {
+    flex: 1;
+    margin-left: 15px;
+  }
+  
+  .name {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .description {
+    font-size: 0.8rem;
+    color: #888;
+    margin: 5px 0 0;
+  }
+  
+  .price {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #f4a233;
+  }
+
+  
+@media (max-width:800px) {
+    .Menu{
+        gap: 1rem;
+    }
+    .menuCont{
+        grid-template-columns: auto;
+    }
+    .menuHead {
+        transform: scale(.9);
+    }
+
+    .menuAct button{
+        transform: scale(.8);
+    }
+
+}
+
+

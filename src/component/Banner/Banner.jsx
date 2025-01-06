@@ -83,7 +83,7 @@ const Banner = () => {
                         <p>{slides[currIndes].desc}</p>
                         <div className={styles.slideBtn}>
                             <Link href={'/#'}><ButtonC content={'Book a Table'}/> </Link>
-                            <Link href={'/#'}><ButtonC content={'Our Menus'}/> </Link>
+                            <Link href={'/menu'}><ButtonC content={'Our Menus'}/> </Link>
                         </div>
                      </div>
 
