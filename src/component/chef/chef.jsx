@@ -1,5 +1,8 @@
 import { chefsData } from '@/data/eventData';
 import styles from './chef.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faFacebook, faInstagram, faLinkedin, faXTwitter, faYoutube } from '@fortawesome/free-brands-svg-icons';
+import Link from 'next/link';
 
 const Chefs = () => {
     
@@ -20,9 +23,11 @@ const Chefs = () => {
                             <h3 className={styles.name}>{name}</h3>
                             <p className={styles.title}>{title}</p>
                             <div className={styles.icons}>
-                            <i className="fa fa-facebook"></i>
-                            <i className="fa fa-instagram"></i>
-                            <i className="fa fa-linkedin"></i>
+                                <Link href={'/#'} style={{textDecoration:'none'}}><FontAwesomeIcon  icon={faFacebook}/></Link>
+                                <Link href={'/#'} style={{textDecoration:'none'}}><FontAwesomeIcon icon={faInstagram}/></Link>
+                                <Link href={'/#'} style={{textDecoration:'none'}}><FontAwesomeIcon icon={faLinkedin}/></Link>
+                                <Link href={'/#'} style={{textDecoration:'none'}}><FontAwesomeIcon icon={faXTwitter}/></Link>
+                                <Link href={'/#'} style={{textDecoration:'none'}}><FontAwesomeIcon icon={faYoutube}/></Link>
                             </div>
                         </div>
                     </article>

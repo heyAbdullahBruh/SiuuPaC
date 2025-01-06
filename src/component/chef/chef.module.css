@@ -68,17 +68,22 @@
     color: #666;
     margin-bottom: 15px;
   }
-  
-  .icons i {
-    margin: 0 8px;
-    font-size: 1.2rem;
+  .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: .2rem;
+  }
+  .icons a svg {
     color: #555;
     cursor: pointer;
     transition: color 0.3s;
+    width: 1.2rem;
   }
   
-  .icons i:hover {
-    color: #007bff;
+  .icons a svg:hover {
+    color:gold;
   }
   
   
