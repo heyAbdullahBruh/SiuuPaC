@@ -74,7 +74,7 @@ const Navber = () => {
 
                 </div>
                 <div className={styles.navBook}>
-                <a href={navRoute==='book-a-table'?'/start-your-event':'/book-a-table'}><ButtonC content={navRoute==='book-a-table'?'Start A Event':'Book A Table'} /></a> 
+                <Link href={navRoute==='book-a-table'?'/start-your-event':'/book-a-table'}><ButtonC content={navRoute==='book-a-table'?'Start A Event':'Book A Table'} /></Link> 
 
                 </div>
             </section>
