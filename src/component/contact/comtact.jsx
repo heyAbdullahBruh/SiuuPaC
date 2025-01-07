@@ -21,6 +21,12 @@ const Contact = () => {
     const handleSubmit=(e)=>{
         e.preventDefault();
         alert(`Thanks for Message . ${formData.name}`);
+        setFormdata({
+            name:'',
+            mail:'',
+            subject:'',
+            message:''
+        });
         console.log(formData);
     };
 
