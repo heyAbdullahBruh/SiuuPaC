@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import styles from './footer.module.css';
 
 const Footer = () => {
@@ -15,6 +16,11 @@ const Footer = () => {
                 mauris dis tincidunt ipsum faucibus ipsum.
             </p>
             <h3 className={styles.logo}>Hotel<span>X</span>.</h3>
+            <ul>
+                <li><Link href={'/terms&condition'}> Terms</Link></li>
+                <li><Link href={'/about'}> About US</Link></li>
+                <li><Link href={'/blog'}> Blog</Link></li>
+            </ul>
             </div>
             <div className={styles.column}>
             <h3>Opening Hours</h3>
