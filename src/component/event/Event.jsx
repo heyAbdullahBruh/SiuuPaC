@@ -63,7 +63,7 @@ const Events = () => {
                   </div>
 
                  <div style={{margin:'2rem 0'}}>
-                    <Link href={'/start-a-event'}><ButtonC content={'Start A Event'}/></Link>
+                    <Link href={'/start-your-event'}><ButtonC content={'Start A Event'}/></Link>
                  </div>
 
                </div>

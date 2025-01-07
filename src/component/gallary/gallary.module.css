@@ -1,0 +1,16 @@
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem 2%;
+    /* cursor: ; */
+}
+
+
+@media (min-width:1900px) {
+    .gallery{
+        padding: 2rem 15%;
+    }
+}

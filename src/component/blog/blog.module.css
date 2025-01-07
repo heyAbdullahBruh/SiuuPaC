@@ -1,0 +1,41 @@
+.blogs{
+    padding: 1rem 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.blogHeader{
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-image: url('https://i.ibb.co.com/J2HqPsk/about.jpg');
+
+}
+
+.blogHeader div {
+    width: 100%;
+    height: 100%;
+    background-color: #000000bd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blogHeader hr{
+    width: 10rem;
+    color: gold;
+}
+
+.blogHeader h1{
+    font-family: "Roboto, mono", monospace;
+    font-size: 3rem;
+    color: #a1fff2;
+}
+

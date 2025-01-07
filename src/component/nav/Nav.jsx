@@ -12,9 +12,6 @@ const Navber = () => {
 
     const router = useRouter();
 
-    const handleSiu =()=>{
-        router.push('/siuu');
-    };
 
     // Navigation 
     const [navRoute,setNavRoute]=useState('');
@@ -24,14 +21,14 @@ const Navber = () => {
         setNavRoute(path);
       }, []);
 
-    const navAllItem = ['/', 'about', 'menu','special','event','chef','gallary','contact'];
+    const navAllItem = ['/', 'menu','special','event','chef','gallary','blog','contact'];
 
     const thisRoute = ()=>{
         switch(navRoute){
             case '/':
                 return '/';
-            case 'about':
-                return 'about';
+            case 'blog':
+                return 'blog';
             case 'menu':
                 return 'menu';
             case 'special':
@@ -77,8 +74,8 @@ const Navber = () => {
 
                 </div>
                 <div className={styles.navBook}>
-                   
-                    <span onClick={handleSiu} ><ButtonC content={'Book A Table'} /></span>
+                <a href={navRoute==='book-a-table'?'/start-your-event':'/book-a-table'}><ButtonC content={navRoute==='book-a-table'?'Start A Event':'Book A Table'} /></a> 
+
                 </div>
             </section>
 

@@ -17,7 +17,16 @@ body{
   scroll-behavior: smooth;
   background-color: #000704ec;
   color: rgba(238, 255, 238, 0.973);
+  position: relative;
   /* padding: 0 1%; */
+}
+
+footer{
+  position: absolute;
+  top: 100%;
+  bottom: -1%;
+  left: 0;
+  right: 0;
 }
 
 @media (min-width:1900px) {

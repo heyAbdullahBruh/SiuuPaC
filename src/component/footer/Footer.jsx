@@ -1,6 +1,8 @@
 import styles from './footer.module.css';
 
 const Footer = () => {
+    const date =new Date();
+
   return (
     <section className={styles.footer}>
       <div className={styles.overlay}></div>
@@ -57,6 +59,7 @@ const Footer = () => {
             </div>
         </div>
       </div>
+      <p>&copy;Copyright HotelX All Right Reserve 2007-{date.getFullYear()}. Design & Develop By Mr.XXX</p>
     </section>
   );
 };

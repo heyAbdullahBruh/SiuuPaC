@@ -1,3 +1,5 @@
+import { shuffle } from "./dataDb";
+
 export const restaurantEvents = [
    {
       id: 'rev1',
@@ -145,3 +147,41 @@ export const chefsData = [
       imgSrc: "https://i.ibb.co/VvbjGjj/chef4.jpg",
     },
 ];
+
+
+
+// Array of image URLs
+const imageUrls = [
+   "https://i.ibb.co.com/cbpCVzJ/gallery-1.jpg",
+   "https://i.ibb.co.com/Kspx982/gallery-2.jpg",
+   "https://i.ibb.co.com/2YSVxHs/gallery-3.jpg",
+   "https://i.ibb.co.com/hL76gjD/gallery-4.jpg",
+   "https://i.ibb.co.com/17W6k14/gallery-5.jpg",
+   "https://i.ibb.co.com/9rmSb65/gallery-6.jpg",
+   "https://i.ibb.co.com/QM52GVD/gallery-7.jpg",
+   "https://i.ibb.co.com/jg5127Y/gallery-8.jpg",
+   "https://i.ibb.co.com/L0HFDyw/gallery-9.jpg",
+   "https://i.ibb.co.com/RNNthKQ/gallery-10.jpg",
+   "https://i.ibb.co.com/Lvbs467/gallery-11.jpg",
+   "https://i.ibb.co.com/NjBb1vX/gallery-12.jpg",
+   "https://i.ibb.co.com/ZX5vnbc/gallery-13.jpg",
+   "https://i.ibb.co.com/2qjj7xz/gallery-14.jpg",
+   "https://i.ibb.co.com/z40kHBM/gallery-15.jpg",
+   "https://i.ibb.co.com/bQKMyYp/gallery-16.jpg",
+   "https://i.ibb.co.com/XtJk8dh/gallery-17.jpg",
+   "https://i.ibb.co.com/v3XGkYy/gallery-18.jpg",
+   "https://i.ibb.co.com/VLK4bsJ/gallery-19.jpg",
+   "https://i.ibb.co.com/Pg3Pp65/gallery-20.jpg"
+ ];
+ 
+ // Map over the URLs to create objects with titles
+  const galleryImgs = imageUrls.map((url, index) => {
+   return {
+     id:`gIm${index*index +1}`,
+     img: url,
+     title: `Gallery Image ${index + 1}`
+   };
+ });
+
+ shuffle(galleryImgs);
+ export default galleryImgs;
